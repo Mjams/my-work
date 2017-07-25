@@ -1,10 +1,10 @@
 /*
   Typografier || Code released under the UNLICENSE
-  https://typografier.web-dev.tools/#0,100,1.3,1.125,0;38,110,1.4,1.200,1;60,120,1.5,1.200,1;90,130,1.5,1.200,1
+  https://typografier.web-dev.tools/#0,100,1.3,1.250,0;38,110,1.4,1.250,1;60,120,1.5,1.250,1;90,130,1.5,1.250,1
 */
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 100%;
   line-height: 1.3;
 }
@@ -12,11 +12,6 @@ html {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-}
-
-p {
-  overflow: hidden;
-  max-width: 500px;
 }
 
 sub,
@@ -136,9 +131,19 @@ thead th {
   width: 100%;
 }
 
+.wrapper-no-center {
+  max-width: 52em;
+  width: 100%;
+}
+
 .max-length {
   margin-left: auto;
   margin-right: auto;
+  max-width: 36em;
+  width: 100%;
+}
+
+.max-length-no-center {
   max-width: 36em;
   width: 100%;
 }
@@ -166,42 +171,42 @@ caption {
 }
 
 .yotta {
-  font-size: 2.2807rem;
-  line-height: 3.25rem;
+  font-size: 4.7684rem;
+  line-height: 6.5rem;
 }
 
 .zetta {
-  font-size: 2.0273rem;
-  line-height: 2.925rem;
+  font-size: 3.8147rem;
+  line-height: 5.2rem;
 }
 
 h1,
 .exa {
-  font-size: 1.802rem;
-  line-height: 2.6rem;
+  font-size: 3.0518rem;
+  line-height: 4.225rem;
 }
 
 h2,
 .peta {
-  font-size: 1.6018rem;
-  line-height: 2.275rem;
+  font-size: 2.4414rem;
+  line-height: 3.25rem;
 }
 
 h3,
 .tera {
-  font-size: 1.4238rem;
-  line-height: 1.95rem;
+  font-size: 1.9531rem;
+  line-height: 2.6rem;
 }
 
 h4,
 .giga {
-  font-size: 1.2656rem;
-  line-height: 1.95rem;
+  font-size: 1.5625rem;
+  line-height: 2.275rem;
 }
 
 h5,
 .mega {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.625rem;
 }
 
@@ -215,13 +220,13 @@ textarea {
 
 small,
 .milli {
-  font-size: .8889rem;
+  font-size: .8rem;
   line-height: 1.3rem;
 }
 
 .micro {
-  font-size: .7901rem;
-  line-height: 1.3rem;
+  font-size: .64rem;
+  line-height: .975rem;
 }
 
 ul {
@@ -238,15 +243,14 @@ select {
   height: calc(1.3rem + .1625rem + .1625rem);
 }
 
-input[type="color"] {
+[type="color"] {
   width: calc(1.3rem + .1625rem + .1625rem);
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+[type="checkbox"],
+[type="radio"] {
   display: inline-block;
   height: auto;
-  width: auto;
 }
 
 .push {
@@ -371,7 +375,8 @@ table th {
 
 .island-eighth,
 .island-1-8,
-input,
+input:not([type="checkbox"]),
+input:not([type="radio"]),
 textarea {
   padding: .1625rem;
 }
@@ -421,6 +426,26 @@ legend {
   padding-right: .325rem;
 }
 
+.white-txt {
+  color: #fff;
+}
+
+.purple-txt {
+  color: #a983bb;
+}
+
+.blue-txt {
+  color: #26bbb3;
+}
+
+.med-weight {
+  font-weight: 400;
+}
+
+.thin-weight {
+  font-weight: 200;
+}
+
 @media only screen and (min-width: 38em) {
 
   html {
@@ -451,42 +476,42 @@ legend {
   }
 
   .yotta {
-    font-size: 3.5832rem;
-    line-height: 4.9rem;
+    font-size: 4.7684rem;
+    line-height: 6.3rem;
   }
 
   .zetta {
-    font-size: 2.986rem;
-    line-height: 4.2rem;
+    font-size: 3.8147rem;
+    line-height: 5.25rem;
   }
 
   h1,
   .exa {
-    font-size: 2.4883rem;
-    line-height: 3.5rem;
+    font-size: 3.0518rem;
+    line-height: 4.2rem;
   }
 
   h2,
   .peta {
-    font-size: 2.0736rem;
-    line-height: 2.8rem;
+    font-size: 2.4414rem;
+    line-height: 3.5rem;
   }
 
   h3,
   .tera {
-    font-size: 1.728rem;
-    line-height: 2.45rem;
+    font-size: 1.9531rem;
+    line-height: 2.8rem;
   }
 
   h4,
   .giga {
-    font-size: 1.44rem;
+    font-size: 1.5625rem;
     line-height: 2.1rem;
   }
 
   h5,
   .mega {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
@@ -500,12 +525,12 @@ legend {
 
   small,
   .milli {
-    font-size: .8333rem;
+    font-size: .8rem;
     line-height: 1.4rem;
   }
 
   .micro {
-    font-size: .6944rem;
+    font-size: .64rem;
     line-height: 1.05rem;
   }
 
@@ -543,15 +568,14 @@ legend {
     height: calc(1.4rem + .175rem + .175rem);
   }
 
-  input[type="color"] {
+  [type="color"] {
     width: calc(1.4rem + .175rem + .175rem);
   }
 
-  input[type="checkbox"],
-  input[type="radio"] {
+  [type="checkbox"],
+  [type="radio"] {
     display: inline-block;
     height: auto;
-    width: auto;
   }
 
   .push {
@@ -676,7 +700,8 @@ legend {
 
   .island-eighth,
   .island-1-8,
-  input,
+  input:not([type="checkbox"]),
+  input:not([type="radio"]),
   textarea {
     padding: .175rem;
   }
@@ -758,42 +783,42 @@ legend {
   }
 
   .yotta {
-    font-size: 3.5832rem;
-    line-height: 4.875rem;
+    font-size: 4.7684rem;
+    line-height: 6.375rem;
   }
 
   .zetta {
-    font-size: 2.986rem;
-    line-height: 4.125rem;
+    font-size: 3.8147rem;
+    line-height: 5.25rem;
   }
 
   h1,
   .exa {
-    font-size: 2.4883rem;
-    line-height: 3.375rem;
+    font-size: 3.0518rem;
+    line-height: 4.125rem;
   }
 
   h2,
   .peta {
-    font-size: 2.0736rem;
-    line-height: 3rem;
+    font-size: 2.4414rem;
+    line-height: 3.375rem;
   }
 
   h3,
   .tera {
-    font-size: 1.728rem;
-    line-height: 2.25rem;
+    font-size: 1.9531rem;
+    line-height: 2.625rem;
   }
 
   h4,
   .giga {
-    font-size: 1.44rem;
-    line-height: 1.875rem;
+    font-size: 1.5625rem;
+    line-height: 2.25rem;
   }
 
   h5,
   .mega {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     line-height: 1.875rem;
   }
 
@@ -807,12 +832,12 @@ legend {
 
   small,
   .milli {
-    font-size: .8333rem;
+    font-size: .8rem;
     line-height: 1.5rem;
   }
 
   .micro {
-    font-size: .6944rem;
+    font-size: .64rem;
     line-height: 1.125rem;
   }
 
@@ -850,15 +875,14 @@ legend {
     height: calc(1.5rem + .1875rem + .1875rem);
   }
 
-  input[type="color"] {
+  [type="color"] {
     width: calc(1.5rem + .1875rem + .1875rem);
   }
 
-  input[type="checkbox"],
-  input[type="radio"] {
+  [type="checkbox"],
+  [type="radio"] {
     display: inline-block;
     height: auto;
-    width: auto;
   }
 
   .push {
@@ -983,7 +1007,8 @@ legend {
 
   .island-eighth,
   .island-1-8,
-  input,
+  input:not([type="checkbox"]),
+  input:not([type="radio"]),
   textarea {
     padding: .1875rem;
   }
@@ -1065,42 +1090,42 @@ legend {
   }
 
   .yotta {
-    font-size: 3.5832rem;
-    line-height: 4.875rem;
+    font-size: 4.7684rem;
+    line-height: 6.375rem;
   }
 
   .zetta {
-    font-size: 2.986rem;
-    line-height: 4.125rem;
+    font-size: 3.8147rem;
+    line-height: 5.25rem;
   }
 
   h1,
   .exa {
-    font-size: 2.4883rem;
-    line-height: 3.375rem;
+    font-size: 3.0518rem;
+    line-height: 4.125rem;
   }
 
   h2,
   .peta {
-    font-size: 2.0736rem;
-    line-height: 3rem;
+    font-size: 2.4414rem;
+    line-height: 3.375rem;
   }
 
   h3,
   .tera {
-    font-size: 1.728rem;
-    line-height: 2.25rem;
+    font-size: 1.9531rem;
+    line-height: 2.625rem;
   }
 
   h4,
   .giga {
-    font-size: 1.44rem;
-    line-height: 1.875rem;
+    font-size: 1.5625rem;
+    line-height: 2.25rem;
   }
 
   h5,
   .mega {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     line-height: 1.875rem;
   }
 
@@ -1114,12 +1139,12 @@ legend {
 
   small,
   .milli {
-    font-size: .8333rem;
+    font-size: .8rem;
     line-height: 1.5rem;
   }
 
   .micro {
-    font-size: .6944rem;
+    font-size: .64rem;
     line-height: 1.125rem;
   }
 
@@ -1157,15 +1182,14 @@ legend {
     height: calc(1.5rem + .1875rem + .1875rem);
   }
 
-  input[type="color"] {
+  [type="color"] {
     width: calc(1.5rem + .1875rem + .1875rem);
   }
 
-  input[type="checkbox"],
-  input[type="radio"] {
+  [type="checkbox"],
+  [type="radio"] {
     display: inline-block;
     height: auto;
-    width: auto;
   }
 
   .push {
@@ -1290,7 +1314,8 @@ legend {
 
   .island-eighth,
   .island-1-8,
-  input,
+  input:not([type="checkbox"]),
+  input:not([type="radio"]),
   textarea {
     padding: .1875rem;
   }

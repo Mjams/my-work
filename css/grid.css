@@ -6,6 +6,7 @@
 .grid {
   margin: 0;
   padding: 0;
+  letter-spacing: -.31em;
   text-rendering: optimizeSpeed;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -39,6 +40,7 @@
 }
 
 .unit {
+  float: left;
   letter-spacing: normal;
   text-rendering: auto;
   vertical-align: top;
@@ -113,6 +115,13 @@
 .xs-3-4 {
   display: inline-block;
   visibility: visible;
+}
+
+.center-boxes {
+  padding: 1em;
+  width: 100%;
+  position: relative;
+  top: 10%;
 }
 
 @media only screen and (min-width: 25em) {
@@ -428,6 +437,13 @@
     visibility: visible;
   }
 
+  .center-boxes {
+    padding: 1em;
+    width: 100%;
+    position: relative;
+    top: 30%;
+  }
+
 }
 
 @media only screen and (min-width: 80em) {
@@ -569,6 +585,43 @@
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+}
+
+.unit-content-center,
+.unit-content-center-vertical {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-flex-direction: column wrap;
+  -ms-flex-direction: column wrap;
+  flex-flow: column wrap;
+}
+
+.unit-content-center-horizontal {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-flex-direction: row wrap;
+  -ms-flex-direction: row wrap;
+  flex-flow: row wrap;
 }
 
 .content-fill,

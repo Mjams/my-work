@@ -1,47 +1,71 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Maggie Paquette: Portfolio Website</title>
+  <meta name="handheldfriendly" content="true">
+  <meta name="mobileoptimized" content="240">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="I am Maggie Paquette and I'm a graphic designer. Interested mainly in UI/UX mostly on the webfront, as well as Illustration, branding, and creative strategies.">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400,500,700,800" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/module.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<header class="banner-1">
+  <div class="banner-text white-txt text-center zindex-1">
+      <a href="index.html"><img class="mp-logo" src="images/logo.svg" alt="Logo for Maggie Paquette"></a>
+      <nav class="text-upper">
+        <ol class="list-group list-group--inline push-0">
+          <li><a class="hover-underline" href="index.html">Home</a></li>
+          <li><a class="hover-underline" href="#about">About</a></li>
+          <li><a class="hover-underline" href="#contact">Contact</a></li>
+          <li><a class="hover-underline" href="portfolio.html">Portfolio</a></li>
+        </ol>
+      </nav>
+      <h1 class="hidden">Maggie Paquette Portfolio Website</h1>
+      <div class="verticle-centre-header">
+        <h2 class="zetta thin-weight text-upper">Design Beautiful Things</h2>
+        <p>Specializing in UI/UX deisgn, Illustration, Web Design, and Branding</p>
+      </div>
+    </div>
+
+
+</header>
 
 <main>
-  <h1>Maggie Paquette: <br>Portfolio Site</h1>
-
-  <div id="about-me" class="grid max-body">
-    <div class="unit s-1 m-1-2 l-1-3">
-      <img class="island-half img-flex" src="{{site.baseurl}}/images/contact-me.jpg" alt="Image of my face">
-    </div>
-    <div class="unit s-1 m-1-2 l-1-2">
-      <h3 class="">This is Me</h3>
-      <p>I am a Ottawa Based Graphic Designer. I have been educated through the three year Graphic Design program at Algonquin Collage. I have worked freelance for several local Ottawa companies, and spend my free time making illustrations. I have a heavy interest working in UI/UX Design, and love being able to bring in the technical side into design.</p>
+  <div class="banner" id="about">
+    <div class="text-center verticle-centre max-width">
+      <h2 class="purple-txt text-upper">About Me</h2>
+      <p>I am a multi disciplinary graphic designer from Ottawa Ontario. I studied design at Algonquin college for 3 years, and graduated in 2017. I have always been passionate about art and creative thinking. I strive to make my work clear, user friendly, and eye catching. I love design because it is the most beautiful form of communication and always lives solemnly in the background of everyone’s life. Whether they know it or not.</p>
     </div>
   </div>
 
-  <div id="portfolio">
-    <div class="text-center zindex-3 txt">
-      <h3 class="">Wish to Take a Gander?</h3>
-      <a class="web-button" href="{{site.baseurl}}/portfolio/" class="">Click Me</a>
+  <div class="banner-2">
+    <div class="text-center verticle-centre">
+    <h2 class="pad-b text-upper white-txt med-weight exa">Clean. Clear. Eye Catching.</h3>
+    <a class="link-btn" href="portfolio.html">View Portfolio</a>
     </div>
-    <img class="banner-img img-flex" src="{{site.baseurl}}/images/collage-home.jpg" alt="">
   </div>
 
-  <div id="contact" class="grid max-body">
-    <div class="text-center island unit s-1 m-1-2 l-1-2">
-      <h3 class="margin-0">Let's Talk</h3>
-      <div class="island">
-        <a class="web-button" href="mailto:maggie.paquette200@gmail.com">Email Me</a>
-      </div>
-      <h4 class="padding-top">Socail Media</h4>
-      <div>
-        <a href="https://www.instagram.com/maggie_paquette/"><img class="social-icon" src="{{site.baseurl}}/images/instagram.svg" alt="Icon of Instagram"></a>
-        <a href="https://www.behance.net/maggiedesign"><img class="social-icon" src="{{site.baseurl}}/images/behance.svg" alt="Icon of Behance"></a>
-        <a href="https://vimeo.com/user48221168"><img class="social-icon" src="{{site.baseurl}}/images/vimeo.svg" alt="Icon of vimeo"></a>
-      </div>
-    </div>
-    <div class="pad-top-half unit xs-1 s-1 m-1-2 l-1-3">
-      <img class=" img-flex" src="{{site.baseurl}}/images/about-me-char.png" alt="Cat Character for design purposes">
-    </div>
+<div class="banner" id="contact">
+  <div class="text-center verticle-centre max-width">
+    <h2 class="blue-txt text-upper">Let's Talk</h2>
+    <p>Have any questions? Or just want to talk? Please feel free to send me an email at <a class="hover-purple blue-txt" href="mailto:maggie.paquette200@gmail.com"> maggie.paquette200@gmail.com</a> I will be in contact with you as soon as I can.</p>
+     <a class="hover-purple blue-txt" href="ttps://www.behance.net/maggiedesign">Behance</a> • <a class="hover-purple blue-txt" href="https://www.instagram.com/maggie_paquette/">Instagram</a> • <a class="hover-purple blue-txt" href="https://vimeo.com/user48221168">Vimeo</a></p>
   </div>
+</div>
 </main>
 
-<footer>
-
+<footer class="text-center">
+  <aside class="hidden">copyrights Maggie Paquette 2017</aside>
 </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,30 +1,124 @@
-/*
-  purple: #a983bb;
-  aqua: #26bbb3;
-  tan: #d2b887;
-  lighter tan: #efdcbd;
- */
+.mp-logo {
+  width: 90px;
+}
 
-.click {
-  background-color: #d2b887;
+.banner-text {
+  padding: 1em;
+}
+
+.banner-1 {
+  background-image: url("../images/banner-1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100vh;
+  width: 100%;
+}
+
+.banner-2 {
+  background-image: url("../images/banner-2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100vh;
+  width: 100%;
+}
+
+.banner-3 {
+  background-image: url("../images/banner-3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 60vh;
+  width: 100%;
+}
+
+ul li {
+  padding: 0 .75em;
+}
+
+ol li {
+  padding: 0.75em 1.25em;
+}
+
+ul li a, ol li a {
+  text-decoration: none;
   color: #fff;
-  padding: .25em;
 }
 
-.web-button {
+.verticle-centre-header {
+  width: 100%;
+  position: absolute;
+  top: 45vh;
+}
+
+.verticle-centre {
+  padding: 0 2em;
+  width: 100%;
   position: relative;
-  color: white;
-  background-color: #26bbb3;
+  top: 35vh;
+}
+
+.banner {
+  height: 100vh;
+}
+
+.max-width {
+  margin: 0 auto;
+  max-width: 850px;
+}
+
+.link-btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 1em;
   padding: .75em;
-  border-radius: 7px;
+  border: 3px solid #fff;
+  transition: .25s;
 }
 
-.margin-0 {
-  margin: 0;
+.link-btn:hover {
+  color: #d2b887;
+  background-color: #fff;
 }
 
-aside {
-  font-size: .25em;
+.link-btn-external {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #D2B887;
+  padding: .75em;
+  border: 3px solid #D2B887;
+  transition: .25s;
+}
+
+.link-btn-external:hover {
+  color: #fff;
+  background-color: #D2B887;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hover-underline {
+  transition: 0;
+}
+
+.hover-underline:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.hover-purple {
+  transition: 0.25s;
+}
+
+.hover-purple:hover {
+  color: #a983bb;
+  border-bottom: 2px solid #a983bb;
 }
 
 .max-body, h1, h2 {
@@ -32,122 +126,40 @@ aside {
   margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  margin: 0;
-}
-
-.banner-img {
-  position: relative;
-}
-
-.nav-li {
-  position: relative;
-  top: -.25em;
-}
-
-.nav-a {
-  color: #a983bb;
-  padding: .50em;
-  transition: .5s;
-}
-
-.nav-a:hover {
-  background-color: #efdcbd;
-  border-radius: 15px;
-}
-
-.txt {
+.back-purple {
   color: #fff;
-  width: 100%;
-  position: absolute;
+  background-color: #A983BB;
+  padding-bottom: .5em;
 }
 
-.thumbnail {
-  transition: .25s;
-}
-
-.thumbnail:hover {
-  box-shadow: 2px 3px 8px #000;
-}
-
-.fig-caption {
+.back-tan {
+  background-color: #D2B887;
   color: #fff;
-  text-shadow: 1px 1px 4px #000;
-  text-transform: uppercase;
-  font-weight: bolder;
-  padding-left: .75em;
-  margin-top: -2em;
+  padding-bottom: .5em;
 }
 
-/*Orginals before the media Queries*/
-
-.logo {
-  width: 50px;
+.back-blue {
+  background-color: #26BBB3;
+  color: #fff;
+  padding-bottom: .5em;
 }
 
-.txt {
-  padding-top: 3em;
+.border-purple {
+  margin-bottom: 1em;
+  border-bottom: 2px solid #a983bb;
 }
 
-.social-icon {
-  width: 50px;
-  padding: 0 .25em 0 .25em;
+.border-tan {
+  margin-bottom: 1em;
+  border-bottom: 2px solid #D2B887;
 }
 
-iframe{
-  width: 425px;
-  height: 250px;
+.border-blue {
+  margin-bottom: 1em;
+  border-bottom: 2px solid #26BBB3;
 }
 
-@media only screen and (min-width: 38em) {
-
-  .logo {
-    width: 60px;
-  }
-
-  .txt {
-    padding-top: 5em;
-  }
-
-  iframe{
-    width: 650px;
-    height: 400px;
-  }
-}
-
-@media only screen and (min-width: 60em) {
-
-  .logo {
-    width: 75px;
-  }
-
-  .txt {
-    padding-top: 9em;
-  }
-
-  .social-icon {
-    width: 65px;
-    padding: 0 .3em 0 .3em;
-  }
-
-  iframe{
-    width: 970px;
-    height: 550px;
-  }
-}
-
-@media only screen and (min-width: 90em) {
-
-  .logo {
-    width: 90px;
-  }
-
-  .txt {
-    padding-top: 12em;
-  }
-
+.footer-a {
+  padding-bottom: 1.75em;
+  color: #fff;
 }
